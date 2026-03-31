@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SONARA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎵 SONARA</h1>
+
+  <div class="player">
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button id="playBtn" onclick="togglePlay()">▶️</button>
+      <button onclick="playNext()">⏭</button>
+      <button id="loopBtn" onclick="toggleLoop()">🔁</button>
+      <button id="shuffleBtn">🔀</button>
+    </div>
+
+    <!-- 🎵 Progress -->
+    <div class="progress-container" id="progressContainer">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <!-- 🔊 Volume -->
+    <div class="volume-control">
+      🔊
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <!-- ❤️ Like -->
+    <button id="likeBtn">🤍</button>
+
+    <div id="songTitle">No song playing</div>
+    <img id="cover" src="" width="150">
+<input type="text" id="searchInput" placeholder="🔍 Search songs...">
+    <ul id="playlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
