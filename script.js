@@ -4,22 +4,22 @@ let isShuffle = false;
 let likedSongs = JSON.parse(localStorage.getItem("likedSongs")) || [];
 
 const songs = [
-  { name: "Trouble", src: "songs/song1.mp3", cover: "covers/cover1.jpg" },
-  { name: "American Wedding", src: "songs/song2.mp3", cover: "covers/cover2.jpg" },
-  { name: "Hold Me Down", src: "songs/song3.mp3", cover: "covers/cover3.jpg" },
-  { name: "Superpowers", src: "songs/song4.mp3", cover: "covers/cover4.jpg" },
-  { name: "Slow Dancing in the Dark", src: "songs/song5.mp3", cover: "covers/cover5.jpg" },
-  { name: "Dracula", src: "songs/song6.mp3", cover: "covers/cover6.jpg" },
-  { name: "The Less I Know The Better", src: "songs/song7.mp3", cover: "covers/cover7.jpg" },
-  { name: "Thinkin Bout You", src: "songs/song8.mp3", cover: "covers/cover8.jpg" },
-  { name: "Nights", src: "songs/song9.mp3", cover: "covers/cover9.jpg" },
-  { name: "Dark Red", src: "songs/song10.mp3", cover: "covers/cover10.jpg" },
-  { name: "Feel Good Inc", src: "songs/song11.mp3", cover: "covers/cover11.jpg" },
-  { name: "That’s What I Like", src: "songs/song12.mp3", cover: "covers/cover12.jpg" },
-  { name: "All Falls Down", src: "songs/song13.mp3", cover: "covers/cover13.jpg" },
-  { name: "Bound 2", src: "songs/song14.mp3", cover: "covers/cover14.jpg" },
-  { name: "Can’t Tell Me Nothing", src: "songs/song15.mp3", cover: "covers/cover15.jpg" },
-  { name: "Father Stretch My Hands", src: "songs/song16.mp3", cover: "covers/cover16.jpg" }
+  { name: "Trouble", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986909/song1_jd3six.mp3", cover: "covers/cover1.jpg" },
+  { name: "American Wedding", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986909/song2_ngnomq.mp3", cover: "covers/cover2.jpg" },
+  { name: "Hold Me Down", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986910/song3_rymedq.mp3", cover: "covers/cover3.jpg" },
+  { name: "Superpowers", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986911/song4_qwklcy.mp3", cover: "covers/cover4.jpg" },
+  { name: "Slow Dancing in the Dark", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986910/song5_attjt8.mp3", cover: "covers/cover5.jpg" },
+  { name: "Dracula", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986910/song6_bkpkxa.mp3", cover: "covers/cover6.jpg" },
+  { name: "The Less I Know The Better", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986912/song7_syycrt.mp3", cover: "covers/cover7.jpg" },
+  { name: "Thinkin Bout You", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986906/song8_il3ge5.mp3", cover: "covers/cover8.jpg" },
+  { name: "Nights", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986909/song9_l1lqkw.mp3", cover: "covers/cover9.jpg" },
+  { name: "Dark Red", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986905/song10_kiqk7q.mp3", cover: "covers/cover10.jpg" },
+  { name: "Feel Good Inc", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986906/song11_xtrjsz.mp3", cover: "covers/cover11.jpg" },
+  { name: "That’s What I Like", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986907/song12_z5vqyk.mp3", cover: "covers/cover12.jpg" },
+  { name: "All Falls Down", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986906/song13_n2n1od.mp3", cover: "covers/cover13.jpg" },
+  { name: "Bound 2", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986908/song14_vkumjx.mp3", cover: "covers/cover14.jpg" },
+  { name: "Can’t Tell Me Nothing", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986909/song15_qxvwx8.mp3", cover: "covers/cover15.jpg" },
+  { name: "Father Stretch My Hands", src: "https://res.cloudinary.com/dx96ndeku/video/upload/q_auto,f_auto/v1774986908/song16_nj5cqc.mp3", cover: "covers/cover16.jpg" }
 ];
 
 let currentSong = 0;
